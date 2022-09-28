@@ -1,1 +1,5 @@
-# 2143_OOP_eelumanze1005
+# Emmanuel Lumanze Jr
+### Repo: 2143 Object Oriented Repo
+### Email: jr.lumanze@gmail.com
+### Image: 
+### Avatar:
