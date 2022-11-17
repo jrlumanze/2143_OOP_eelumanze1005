@@ -22,37 +22,28 @@
 using namespace std;
 
 /**
- * Huffman
+ * Class Name:
+ *      CircularArrayQue
+ *
+ *
  * 
  * Description:
- *      This class implements a compressions algorithm called Huffman Coding.
- *      Huffman coding assigns codes to characters such that the length of the 
- *      code depends on the relative frequency or weight of the corresponding 
- *      character. Huffman codes are of variable-length, and prefix-free
- * 
+ *      
  * Public Methods:
- *                          Huffman()                               
- *      void                BuildFrequencyTable(string filename)
- *      string              LookupCode(char key)
- *      void                Analyze()
- *      map<char, string>   GetCodes()
+ *      CircularArrayQue(int size)
+ *      CircularArrayQue()
+ *      void Push(int item)
+ *      int Pop()
+ *
  * 
  * Private Methods:
- *      void                _BuildLookupTable
- *      void                _BuildTree
- *      int                 _maxDepth
+ *      void Init
+ *      bool Full
  * 
  * Usage: 
  * 
- *      Huffman H(filename):                        // Create Instance of Huffman
- *                                                  // and build freq table. 
- *      H.GetCodes();                               // get map <char,string> of codes
- * 
- *                                                  // or
  *      
- *      Huffman H;                                  // do seperately
- *      H.BuildFrequencyTable(filename);            // or use to re-build another file
- *      H.LookupCode('s')                           // get code for 's' 
+ *
  *      
  */
 
@@ -68,6 +59,21 @@ private:
         QueSize = size;
     }
 
+    /**
+ * Private: 
+ *      Full
+ * 
+ * Description:
+ *      
+ * Params:
+ *      QueSize
+ *      CurrentSize
+ *      
+ * 
+ * Returns:
+ *      bool, it'll be true or false based on the equality
+ */
+    
     bool Full() {
         return CurrentSize == QueSize;
     }
@@ -103,7 +109,8 @@ public:
         }
     }
     /**
-     * Public : Pop
+     * Public : 
+     *      int Pop
      * 
      * Description:
      *      Loads an array of integerts into a linked list.
