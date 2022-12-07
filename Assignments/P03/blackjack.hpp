@@ -8,6 +8,7 @@
 #include <vector>
 #include <map>
 #include "colors.h"
+#define OFF "\x1b[0m" //reset
 
 using namespace std;
 
